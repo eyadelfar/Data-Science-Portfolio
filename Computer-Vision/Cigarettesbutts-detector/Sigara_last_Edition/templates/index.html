@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YOLO Prediction</title>
+  </head>
+  <body>
+    <h1>YOLO Prediction</h1>
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".jpg,.jpeg,.png,.mp4" required>
+      <br>
+      <label for="depth">Depth:</label>
+      <input type="number" name="depth" required>
+      <br>
+      <input type="submit" value="Predict">
+    </form>
+  </body>
+</html>
